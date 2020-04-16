@@ -10,14 +10,14 @@ const App = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getJoke())
+    dispatch(getJoke('gun'))
   }, [dispatch])
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {joke ? `random joke: ${joke.value}` : ''}
+        {joke ? `random joke web: ${joke.value}` : ''}
       </header>
     </div>
   );

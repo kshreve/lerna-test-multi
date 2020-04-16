@@ -17,8 +17,8 @@ export default (state = initialState, action) => {
   }
 }
 
-export const getJoke = () => (dispatch) => {
-  return fetch('https://api.chucknorris.io/jokes/search?query=fire')
+export const getJoke = (query) => (dispatch) => {
+  return fetch(`https://api.chucknorris.io/jokes/search?query=${query}`)
     .then((response) => {
       return response.json();
     })

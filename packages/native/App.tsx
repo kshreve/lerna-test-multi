@@ -21,12 +21,12 @@ export default () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getJoke())
+    dispatch(getJoke('wool'))
   }, [dispatch])
 
   return (
     <View style={styles.container}>
-      <Text>{joke ? `random joke: ${joke.value}` : ''}</Text>
+      <Text>{joke ? `random joke native: ${joke.value}` : ''}</Text>
     </View>
   );
 }
