@@ -1,0 +1,14 @@
+{
+  "name": "lerna-test-multi-redux",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "engines": {
+    "node": "12.10.0",
+    "npm": "6.11.3",
+    "yarn": "1.19.1"
+  }
+}

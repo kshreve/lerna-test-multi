@@ -11,7 +11,8 @@
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "lerna-test-multi-redux": "0.0.1"
   },
   "engines": {
     "node": "12.10.0",
