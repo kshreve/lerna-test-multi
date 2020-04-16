@@ -6,7 +6,10 @@
     "clean": "rm -rf ./packages/*/node_modules",
     "clean-locks": "rm -rf ./packages/*/yarn.lock",
     "bootstrap": "lerna bootstrap",
-    "reset": "yarn clean && yarn clean-locks && yarn bootstrap"
+    "reset": "yarn clean && yarn clean-locks && yarn bootstrap",
+    "web-start": "cd packages/web && yarn start",
+    "native-pod-install": "cd packages/native/ios && pod install",
+    "native-start": "yarn native-pod-install && cd packages/native && yarn ios"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
@@ -14,6 +17,6 @@
   "engines": {
     "node": "12.10.0",
     "npm": "6.11.3",
-    "yarn": "1.19.1"
+    "yarn": "1.22.4"
   }
 }
