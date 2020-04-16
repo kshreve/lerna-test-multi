@@ -18,15 +18,15 @@ export default (state = initialState, action) => {
 }
 
 export const getJoke = () => (dispatch) => {
-  return fetch('https://api.chucknorris.io/jokes/random')
+  return fetch('https://api.chucknorris.io/jokes/search?query=fire')
     .then((response) => {
       return response.json();
     })
-    .then((joke) => {
+    .then(({ result }) => {
       return dispatch({
         type: GET_JOKE,
         payload: {
-          joke
+          joke: result[0]
         }
       })
     });

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
+import { getJoke } from 'lerna-test-multi-redux/ducks/joke'
 
 import logo from './logo.svg';
 import './App.css';
-import { getJoke } from './redux/ducks/joke'
 
 const App = () => {
   const joke = useSelector((state) => state.joke.joke);
